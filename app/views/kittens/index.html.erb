@@ -1,1 +1,8 @@
-Hello Kittens!
+<h1>All kittens</h1>
+<% if @kittens.any? %>
+  <ul>
+    <%= render @kittens %>
+  </ul>
+<% else %>
+  <p>No kittens found</p>
+<% end %>
