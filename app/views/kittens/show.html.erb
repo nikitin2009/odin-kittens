@@ -3,6 +3,10 @@
   <p><strong>Age:</strong> <%= @kitten.age %></p>
   <p><strong>Cuteness:</strong> <%= @kitten.cuteness %></p>
   <p><strong>Softness:</strong> <%= @kitten.softness %></p>
+  <p>
+    <%= link_to 'Delete', kitten_path(@kitten), method: :delete %>
+    <%= link_to 'Edit', edit_kitten_path(@kitten) %>
+  </p>
 <% else %>
   <p>No kitten found</p>
 <% end %>

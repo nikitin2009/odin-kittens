@@ -1,4 +1,7 @@
 <h1>All kittens</h1>
+<p>
+  <%= link_to 'Add new', new_kitten_path %>
+</p>
 <% if @kittens.any? %>
   <ul>
     <%= render @kittens %>

@@ -7,4 +7,7 @@
   <p><strong>Age:</strong> <%= kitten.age %></p>
   <p><strong>Cuteness:</strong> <%= kitten.cuteness %></p>
   <p><strong>Softness:</strong> <%= kitten.softness %></p>
+  <p>
+    <%= link_to 'Delete', kitten_path(kitten), method: :delete %>
+  </p>
 </li>

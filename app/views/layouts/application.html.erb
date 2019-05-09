@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <% flash.each do |m_type, m| %>
+      <div class="aler aler-<%= m_type %>">
+        <%= m %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
